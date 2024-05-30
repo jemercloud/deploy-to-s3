@@ -25,5 +25,5 @@ runs:
       shell: bash
       run: |
         aws cloudfront create-invalidation \
-          --distribution-id ${{ env.distribution-id }} \
+          --distribution-id ${{ inputs.distribution-id }} \
           --paths ${{ inputs.paths-to-invalidate }}
