@@ -13,7 +13,7 @@ inputs:
   paths-to-invalidate:
     description: 'The paths to invalidate'
     required: false
-    default: '/*'
+    default: '/index.html /i18n/*'
 runs: 
   using: 'composite'
   steps:
